@@ -1,17 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
     var signInButton = document.getElementById("signInButton");
+    var emailInput = document.getElementById("email");
+    var passwordInput = document.getElementById("password");
+    var errorMessage = document.getElementById("errorMessage");
 
     signInButton.addEventListener("click", function () {
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
+        var email = emailInput.value;
+        var password = passwordInput.value;
 
         if (email.trim() === "" || password.trim() === "") {
-            alert("Masukkan email dan password anda terlebih dahulu.");
+            errorMessage.textContent = "Masukkan email dan password anda terlebih dahulu.";
+            errorMessage.style.display = "block";
         } else {
+            errorMessage.style.display = "none";
             alert("Berhasil Sign In!"); 
         }
     });
-});
-document.getElementById("signUpLink").addEventListener("click", function() {
-    window.location.href = "signup.html"; // Ganti "signup.html" dengan URL halaman sign up Anda.
+    
+    emailInput.addEventListener("input", function () {
+        errorMessage.style.display = "none";
+    });
+
+    passwordInput.addEventListener("input", function () {
+        errorMessage.style.display = "none";
+    });
 });

@@ -1,15 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
     var signUpButton = document.getElementById("signUpButton");
+    var namaInput = document.getElementById("nama");
+    var emailInput = document.getElementById("email");
+    var passwordInput = document.getElementById("password");
+    var errorMessage = document.getElementById("errorMessage");
 
     signUpButton.addEventListener("click", function () {
-        var nama = document.getElementById("nama").value;
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
+        var nama = namaInput.value;
+        var email = emailInput.value;
+        var password = passwordInput.value;
 
         if (nama.trim() === "" || email.trim() === "" || password.trim() === "") {
-            alert("Masukkan nama, email dan password terlebih dahulu.");
+            errorMessage.textContent = "Masukkan nama, email, dan password anda terlebih dahulu.";
+            errorMessage.style.display = "block"; 
         } else {
-            alert("Berhasil membuat akun!"); 
+            errorMessage.style.display = "none"; 
+            alert("Berhasil Sign Up!"); 
         }
+    });
+
+    namaInput.addEventListener("input", function () {
+        errorMessage.style.display = "none";
+    });
+
+    emailInput.addEventListener("input", function () {
+        errorMessage.style.display = "none";
+    });
+
+    passwordInput.addEventListener("input", function () {
+        errorMessage.style.display = "none";
     });
 });
