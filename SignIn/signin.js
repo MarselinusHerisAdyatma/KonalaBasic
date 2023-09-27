@@ -25,3 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
         errorMessage.style.display = "none";
     });
 });
+
+    var signupLink = document.getElementById("signup-link");
+
+    signupLink.addEventListener("click", function (e) {
+        window.location.href = "https://github.com/MarselinusHerisAdyatma/KonalaBasic/blob/main/SignUp/signup.html"; 
+        e.preventDefault(); 
+    });
