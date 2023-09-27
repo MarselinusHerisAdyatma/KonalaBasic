@@ -31,3 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
         errorMessage.style.display = "none";
     });
 });
+
+var signupLink = document.getElementById("signin-link");
+
+    signupLink.addEventListener("click", function (e) {
+        window.location.href = "signin.html"; 
+        e.preventDefault(); 
+    });
