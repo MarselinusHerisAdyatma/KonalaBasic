@@ -29,6 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var signupLink = document.getElementById("signup-link");
 
     signupLink.addEventListener("click", function (e) {
-        window.location.href = "https://github.com/MarselinusHerisAdyatma/KonalaBasic/blob/main/SignUp/signup.html"; 
+        window.location.href = "signup.html"; 
         e.preventDefault(); 
     });

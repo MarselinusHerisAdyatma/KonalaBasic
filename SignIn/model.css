@@ -57,12 +57,10 @@
     transition: color 0.3s; 
 }
 
-
 .social-icon.google:hover i {
     color: #868061; 
     transition: color 0.3s; 
 }
-
 
 .social-icon.twitter:hover i {
     color: #868061; 
