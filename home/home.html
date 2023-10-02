@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <style>
+    .carousel-caption {
+      background: #bdb89ebe;
+      background-size: 50%; 
+      color: white;
+      text-align: center;
+      padding: 20px; 
+      left: 0;
+      right: 0;
+      transform: translateY(-50%); 
+    }
+
+    .custom-container {
+        background-image: url('.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid #000; 
+        border-radius: 20%;
+        float: left;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 100px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-left: 10%;
+        margin-bottom: 10%;
+        
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px; 
+        text-align: center;
+        align-items: center; 
+        margin: 20px auto; 
+        max-width: 800px; 
+    }
+
+    .main-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+      background-color: #BBB48E;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .about-text {
+      grid-column: 2 / span 1; 
+    }
+
+    .best-seller-card {
+        background-color: #BDB89E;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .collection-card {
+        background-color: #FDFBF0;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    
+  </style>
+  <body>
+    <div class="main-container">
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #FDFBF0;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo ukm.jpg" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
+            </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Katalog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="navbar-text ms-auto">
+            <i class="fas fa-shopping-cart" style="width:50px;" ></i> 
+            <i class="fa fa-bars" style="width:50px;"></i>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="hampers.jpg" class="d-block w-100" alt="gambar1">
+            <div class="carousel-caption">
+                <h5>Konala Basic</h5>
+                <p>Mosleem’s Gift - Simplify and Elegance</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="hampers.jpg" class="d-block w-100" alt="gambar2">
+          </div>
+          <div class="carousel-item">
+            <img src="hampers.jpg" class="d-block w-100" alt="gambar3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <br>
+      <div class="grid-container">
+        <div class="custom-container"></div>
+        <div class="about-text">
+            <h2>About</h2>
+            <p>Konala Basic merupakan salah satu usaha yang bergerak dibidang fashion.
+              Menyediakan berbagai jenis hampers muslim mulai dari hijab hingga busana muslim. Berdiri sejak tahun 2020 di Malang oleh Dini Naylul Izzah.</p>
+        </div>
+      </div>
+      
+      <div class="best-seller-card text-center d-flex justify-content-center">
+        <div class="card" style="width:200px; margin: 0 10px;">
+            <img class="card-img-top" src="https://i.pinimg.com/564x/0e/92/51/0e9251a6367ee310dcd7bba68ccce5cc.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Hampers</h4>
+                <a href="#" class="btn btn-primary">Harga</a>
+            </div>
+        </div>
+        <div class="card" style="width:200px; margin: 0 10px;">
+            <img class="card-img-top" src="https://i.pinimg.com/564x/c9/21/84/c921846de765c156296686bf065fbb66.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Kerudung</h4>
+                <a href="#" class="btn btn-primary">Harga</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="collection-card text-center d-flex justify-content-center">
+      <div class="card" style="width:200px; margin: 0 10px;">
+          <img class="card-img-top" src="https://i.pinimg.com/564x/0e/92/51/0e9251a6367ee310dcd7bba68ccce5cc.jpg" alt="Card image">
+          <div class="card-body">
+              <h4 class="card-title">Hampers</h4>
+              <a href="#" class="btn btn-primary">Harga</a>
+          </div>
+      </div>
+      <div class="card" style="width:200px; margin: 0 10px;">
+          <img class="card-img-top" src="https://i.pinimg.com/564x/c9/21/84/c921846de765c156296686bf065fbb66.jpg" alt="Card image">
+          <div class="card-body">
+              <h4 class="card-title">Kerudung</h4>
+              <a href="#" class="btn btn-primary">Harga</a>
+          </div>
+      </div>
+      <div class="card" style="width:200px; margin: 0 10px;">
+        <img class="card-img-top" src="https://i.pinimg.com/564x/0e/92/51/0e9251a6367ee310dcd7bba68ccce5cc.jpg" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title">Hampers</h4>
+            <a href="#" class="btn btn-primary">Harga</a>
+        </div>
+    </div>
+    <div class="card" style="width:200px; margin: 0 10px;">
+      <img class="card-img-top" src="https://i.pinimg.com/564x/0e/92/51/0e9251a6367ee310dcd7bba68ccce5cc.jpg" alt="Card image">
+      <div class="card-body">
+          <h4 class="card-title">Hampers</h4>
+          <a href="#" class="btn btn-primary">Harga</a>
+      </div>
+  </div>
+  </div>
+</div>
+    <div class="footer">
+      <div style="background-color: #BBB48E; color: white; text-align: center; display: flex; justify-content: center; align-items: center;">
+          <a class="navbar-brand" href="#">
+              <img src="logo ukm.jpg" alt="Avatar Logo" style="width:60px;" class="rounded-pill">
+          </a>
+          <ul class="list-inline nav">
+              <li class="nav-item ml-5">ㅤKonala Basic Copyright © 2023</li>
+          </ul>
+      </div>
+  </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
