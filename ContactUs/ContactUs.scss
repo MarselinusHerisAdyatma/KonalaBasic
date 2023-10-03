@@ -1,0 +1,65 @@
+// Variables
+$primary-color: #868061;
+$secondary-color: #BBB48E;
+$background-color: #FDFBF0;
+
+// Styles
+body {
+    background-color: $background-color;
+}
+
+h1, h3, p, address, .form-control {
+    color: $primary-color;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.icon-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 25px;
+    margin-right: 10px;
+    color: $primary-color;
+}
+
+.whatsapp-icon .fab.fa-whatsapp,
+.instagram-icon .fab.fa-instagram,
+.e-commerce-icon .fas.fa-shopping-cart {
+    color: $secondary-color !important;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+#logo-form-container {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background-color: transparent;
+    border-radius: 30px;
+    border: 3px solid $primary-color;
+    color: $primary-color;
+    width: 100%;
+    padding: 10px;
+}

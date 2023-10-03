@@ -1,0 +1,61 @@
+body {
+  background-color: #FDFBF0;
+}
+
+h1, h3, p, address, .form-control {
+  color: #868061;
+}
+
+.btn-primary {
+  background-color: #868061;
+  border-color: #868061;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 10px;
+  color: #868061;
+}
+
+.whatsapp-icon .fab.fa-whatsapp,
+.instagram-icon .fab.fa-instagram,
+.e-commerce-icon .fas.fa-shopping-cart {
+  color: #BBB48E !important;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+#logo-form-container {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 3px solid #868061;
+  color: #868061;
+  width: 100%;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=ContactUs.css.map */
