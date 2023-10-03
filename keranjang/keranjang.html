@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="keranjang.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #FDFBF0;">
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #FDFBF0 ;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="logo.jpeg" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
@@ -28,6 +28,10 @@
             <li class="nav-item">
                 <a class="nav-link active" href="#">Contact Us</a>
             </li>
+            <form class="form-inline">
+                <input class="form-control-sm" placeholder="Search">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
           </ul>
           <div class="navbar-text ms-auto">
             <i class="fas fa-shopping-cart" style="width:50px;" ></i> 
@@ -36,11 +40,6 @@
         </div>
       </nav>
       <section class="about">
-        <div class="up-about">
-            <div class="round-about">
-                <h1>About</h1>
-            </div>
-        </div>
         <div class="up-about">
             <div class="round-konala">
                 <h1>Keranjang</h1>
@@ -53,8 +52,8 @@
                     <table class="table">
                         <tr>
                             <td></td>
-                            <td>Foto</td>
-                            <td>Judul</td>
+                            <td></td>
+                            <td>Nama Barang</td>
                             <td>Harga Satuan</td>
                             <td>Kuantitas</td>
                             <td>Total Harga</td>
@@ -63,13 +62,15 @@
 
                         <tr>
                             <td><input type="checkbox"></td>
-                            <td><img src="" class="img-cart"></td>
-                            <td>Nama Produk</td>
-                            <td>Rp20.000</td>
+                            <td><img src="https://down-id.img.susercontent.com/file/e3e90a5b552a128e17e431e740415b19" class="img-cart"></td>
+                            <td>Hampers Warna Gift Box<br>
+                                <small>Pinky, Kartu</small>
+                            </td>
+                            <td>Rp53.000</td>
                             <td>
                                 <input type="number">
                             </td>
-                            <td>Rp.20.000</td>
+                            <td>Rp53.000</td>
                             <td>
                                 <a href="#" class="btn btn-danger rounded-circle btn-tambah">
                                     <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,13 +90,15 @@
 
                         <tr>
                             <td><input type="checkbox"></td>
-                            <td><img src="" class="img-cart"></td>
-                            <td>Nama Produk</td>
-                            <td>Rp20.000</td>
+                            <td><img src="https://down-id.img.susercontent.com/file/id-11134207-7quky-ljmhqaqo4eav67" class="img-cart"></td>
+                            <td>Blouse Kemeja Tunik</br>
+                                <small>Blouse Cream Kancing</small>
+                            </td>
+                            <td>Rp32.000</td>
                             <td>
                                 <input type="number">
                             </td>
-                            <td>Rp.20.000</td>
+                            <td>Rp32.000</td>
                             <td>
                                 <a href="#" class="btn btn-danger rounded-circle btn-tambah">
                                     <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,13 +118,15 @@
 
                         <tr>
                             <td><input type="checkbox"></td>
-                            <td><img src="" class="img-cart"></td>
-                            <td>Nama Produk</td>
-                            <td>Rp20.000</td>
+                            <td><img src="https://down-id.img.susercontent.com/file/id-11134207-7qul4-ljmomv6p5mcn04" class="img-cart"></td>
+                            <td>Celana Jeans / Celana Kain / Celana Kulot </br>
+                                <small>Katun Krem 32</small>
+                            </td>
+                            <td>Rp37.000</td>
                             <td>
                                 <input type="number">
                             </td>
-                            <td>Rp.20.000</td>
+                            <td>Rp37.000</td>
                             <td>
                                 <a href="#" class="btn btn-danger rounded-circle btn-tambah">
                                     <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,10 +154,10 @@
                     <table class="table">
                         <tr>
                             <td><input type="checkbox">Pilih Semua</td>
-                            <td>Hapus</td>
+                            <td class="btn-sm">Hapus</td>
                             <td></td>
                             <td></td>
-                            <td>Total (0 Produk) : Rp60.000</td>
+                            <td>Total (3 Produk) : Rp122.000</td>
                             <td>
                                 <a href="#" class="btn btn-sm btn-success w-20">Checkout</a>
                             </td>
