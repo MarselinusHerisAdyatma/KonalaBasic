@@ -1,6 +1,7 @@
 body{
-    background-color: #BBB48E;
+    background-color: #BDB89E;
 }
+
 #rounded-navbar{
     background-color: #FDFBF0; 
     padding: 5px;
@@ -69,7 +70,7 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 20px 200px ;
+    margin: 20px 200px 0px 200px;
     padding: 30px;
 }
 .content{
@@ -137,23 +138,41 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     opacity: 0.5;
 }
 .kritik-saran{
-    background-color: rgba(134, 128, 97, 0);
+    background-color: #BDB89E;
     text-align: center;
 }
 .kritik-saran h3{
     padding: 40px;
 }
 .form-floating{
-    margin: 0px 100px 50px 100px;
+    margin: 0px 100px 0px 100px;
 }
 .btnsubmit{
     margin-top: 10px;
+    margin-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
     border-radius:10px ;
 }
-.footer{
+.ftr{
     background-color: #868061;
-    height: 80px;
     border-radius: 15px 15px 0 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.centered-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.text{
+    text-align: center;
+    margin-top: 12px;
 }
