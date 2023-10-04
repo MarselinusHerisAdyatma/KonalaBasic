@@ -1,5 +1,6 @@
 body{
     background-color: #BDB89E;
+    font-size: 16px; /* Ukuran font untuk desktop */
 }
 
 #rounded-navbar{
@@ -176,4 +177,23 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-top: 12px;
     color: #FFFFFF;
+}
+
+@media (max-width: 810px){
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        font-size: 12px;
+    }
+    .box-container{
+        margin: 20px 20px 0px 20px; 
+        padding: 20px; 
+    }
+}
+
+@media (min-width: 1280px){
 }
