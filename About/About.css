@@ -102,7 +102,9 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
 .text-box p{
-    text-align: left;
+    text-align: center;
+    font-size: 30px;
+    font-family: serif,sans-serif;
     padding: 25px 0px 10px 15px;
 }
 .under-text{
@@ -135,7 +137,4 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     background-color: #868061;
     opacity: 0.5;
 
-}
-.fa-home, .fa-bars{
-    cursor: pointer;
 }
