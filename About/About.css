@@ -146,6 +146,12 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 .form-floating{
     margin: 0px 100px 50px 100px;
 }
+.btnsubmit{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border-radius:10px ;
+}
 .footer{
     background-color: #868061;
     height: 80px;
