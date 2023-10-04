@@ -137,16 +137,17 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     opacity: 0.5;
 }
 .kritik-saran{
-    background-color: rgba(134, 128, 97, 0.8);
+    background-color: rgba(134, 128, 97, 0);
     text-align: center;
 }
 .kritik-saran h3{
     padding: 40px;
 }
 .form-floating{
-    margin: 0px 100px 20px 100px;
+    margin: 0px 100px 50px 100px;
 }
 .footer{
     background-color: #868061;
-    height: 10px;
+    height: 80px;
+    border-radius: 15px 15px 0 0;
 }
