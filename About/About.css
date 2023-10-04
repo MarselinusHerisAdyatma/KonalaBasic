@@ -116,8 +116,7 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 .review{
     background-color: #FDFBF0;
-    max-height: 500px;
-    height: 500px;
+    height: 600px;
     text-align: center;
 }
 .review h3{
@@ -136,5 +135,18 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     margin: 15px 100px 0px 15px;
     background-color: #868061;
     opacity: 0.5;
-
+}
+.kritik-saran{
+    background-color: rgba(134, 128, 97, 0.8);
+    text-align: center;
+}
+.kritik-saran h3{
+    padding: 40px;
+}
+.form-floating{
+    margin: 0px 100px 20px 100px;
+}
+.footer{
+    background-color: #868061;
+    height: 10px;
 }
