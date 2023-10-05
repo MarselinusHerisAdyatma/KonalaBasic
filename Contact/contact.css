@@ -1,0 +1,149 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 16pxpx;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  color: #868061;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff9900;
+}
+
+.navbar-text i.fa-shopping-cart {
+  font-size: 25px;
+}
+
+#loginButton {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#loginButton:hover {
+  color: #ff9900;
+}
+
+.container {
+  padding: 32pxpx;
+}
+
+body {
+  background-color: #FDFBF0;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-column {
+  flex: 1;
+  padding: 16pxpx;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #868061;
+  margin-top: 20px;
+}
+
+h1, h3, p, address, .form-control {
+  color: #868061;
+}
+
+.btn-login {
+  background-color: #868061;
+  font-weight: bold;
+  padding: 5pxpx;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #68644c;
+}
+
+.btn-primary {
+  background-color: #868061;
+  border-color: #868061;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 10px;
+  color: #868061;
+}
+
+.whatsapp-icon .fab.fa-whatsapp,
+.instagram-icon .fab.fa-instagram,
+.e-commerce-icon .fas.fa-shopping-cart {
+  color: #868061 !important;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+#logo-form-container {
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-control {
+  background-color: transparent;
+  border-radius: 30px;
+  border: 3px solid #868061;
+  color: #868061;
+  width: 100%;
+  padding: 10pxpx;
+}
+
+/*# sourceMappingURL=contact.css.map */
