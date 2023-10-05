@@ -1,0 +1,206 @@
+$background-page: #BDB89E;
+$primary-color: #868061;
+$secondary-color: #BBB48E;
+$tertiary-color: #DBD6BC;
+$background-color: #FDFBF0;
+$white-color: #FFFFFF;
+
+body{
+    background-color: $background-page;
+    font-size: 16px; 
+}
+
+#rounded-navbar{
+    background-color: $background-color; 
+    padding: 5px;
+    border-radius: 0 0 15px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.navbar-nav li{
+    margin-right:20px;
+}
+.nav-item a{
+text-decoration: none;
+font-size: 10px;
+color: #868061;
+padding: 3px 5px; 
+background-color: $background-color; 
+border: solid 1px $primary-color;
+border-radius: 15px;
+
+transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.nav-item a:hover{
+background-color: $primary-color; 
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.about{
+    background-color: $secondary-color;
+    text-align: center;
+}
+.round-about{
+    margin-top: 80px;
+    border-radius: 15px;
+    background-color: $background-color;
+    padding: 10px 40px;
+    display: inline-block;
+}
+.round-konala{
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: $tertiary-color;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.round-about h1{
+    margin: 0;
+    font-size: 20px;
+}
+.round-konala h1{
+    margin: 0;
+    font-size: 24px;
+    font-style: italic;
+    display: inline-block;
+    letter-spacing: 8px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}   
+.box-container{
+    display: flex;
+    flex-direction: column;
+    background-color: $white-color;
+    border-radius: 10px;
+    margin: 20px 200px 0px 200px;
+    padding: 30px;
+}
+.content{
+    display: flex;
+}
+.picture-box{
+    flex: 1;
+    height: 300px;
+    background-color:$secondary-color;
+    border-radius: 20px;
+    text-align: center;
+    background-image: url('foto.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box{
+    flex: 2;
+    height: 20%;
+    border-radius: 40px 0px 40px 0px;
+    margin-top: 100px;
+    margin-left: 20px;
+    background-color: $background-color;
+    color: $primary-color;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.text-box p{
+    text-align: center;
+    font-size: 30px;
+    font-family: serif,sans-serif;
+    padding: 25px 0px 10px 15px;
+}
+.under-text{
+    margin-top: 15px;
+    color: $primary-color;
+    border-radius: 10px;
+    padding: 10px;
+    text-align:justify;
+}
+.review{
+    background-color: $background-color;
+    height: 600px;
+    text-align: center;
+}
+.review h3{
+    padding: 40px;
+}
+.review-box{
+    display: flex;
+    height: 120px;
+    margin: 0px 40px 30px 40px;
+    border-radius: 5px;
+    background-color: $background-page;
+}
+.inner-box{
+    flex: 1;
+    height: 90px;
+    margin: 15px 100px 0px 15px;
+    background-color: $primary-color;
+    opacity: 0.5;
+}
+.kritik-saran{
+    background-color: $background-page;
+    text-align: center;
+}
+.kritik-saran h3{
+    padding: 40px;
+}
+.form-floating{
+    margin: 0px 100px 0px 100px;
+}
+.btnsubmit{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: $white-color;
+    border-radius:10px ;
+}
+.ftr{
+    background-color: #868061;
+    border-radius: 15px 15px 0 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.centered-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.text{
+    text-align: center;
+    margin-top: 12px;
+    color: $white-color;
+}
+
+@media (max-width: 810px){
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        font-size: 12px;
+    }
+    .box-container{
+        margin: 20px 20px 0px 20px; 
+        padding: 20px; 
+    }
+}
+
+@media (min-width: 1280px){
+}
