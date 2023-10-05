@@ -26,23 +26,20 @@
   color: rgba(187, 180, 142, 0.8);
   margin-right: 5px;
 }
-.social-icon.facebook:hover i {
+.social-icon.facebook:hover {
   color: #868061;
-  transition: color 0.3s;
 }
 .social-icon.google {
   margin-left: 5px;
 }
-.social-icon.google:hover i {
+.social-icon.google:hover {
   color: #868061;
-  transition: color 0.3s;
 }
 .social-icon.twitter {
   margin-left: 5px;
 }
-.social-icon.twitter:hover i {
+.social-icon.twitter:hover {
   color: #868061;
-  transition: color 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */

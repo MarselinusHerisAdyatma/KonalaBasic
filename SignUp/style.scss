@@ -1,14 +1,22 @@
-//variabel global
 $primary-color: rgba(207, 127, 127, 0.753);
 $secondary-color: #bbb48ecc;
 $hover-color: #868061;
 $error-border-color: red;
 
-//variabel scope
+
+@function change-alpha($color, $new-alpha) {
+    @return rgba(red($color), green($color), blue($color), $new-alpha);
+}
+
+
+@function change-error-border-color($new-color) {
+    @return $new-color;
+}
+
+
 @mixin social-icon-hover {
-    &:hover i {
+    &:hover {
         color: $hover-color;
-        transition: color 0.3s;
     }
 }
 
@@ -33,7 +41,7 @@ $error-border-color: red;
     text-align: center;
     padding: 3px;
     border-radius: 5px;
-    border: 2px solid $error-border-color;
+    border: 2px solid change-error-border-color($error-border-color); 
 }
 
 .social-icon {
@@ -41,16 +49,16 @@ $error-border-color: red;
     margin-right: 5px;
 
     &.facebook {
-        @include social-icon-hover;
+        @include social-icon-hover; 
     }
 
     &.google {
         margin-left: 5px;
-        @include social-icon-hover;
+        @include social-icon-hover; 
     }
 
     &.twitter {
         margin-left: 5px;
-        @include social-icon-hover;
+        @include social-icon-hover; 
     }
 }
