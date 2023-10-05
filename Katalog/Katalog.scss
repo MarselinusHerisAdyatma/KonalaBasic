@@ -1,20 +1,19 @@
+@use 'margin';
+@import "partial";
+
+$margin-hal: margin.$margin;
+
 $first_border: 2;
 $second_border: 2;
 @function atur_border($n) {
   @return $n * $first_border * $second_border ;
 }
 
+
 $box-shadow: 0 4px 8px 0 rgba(142, 144, 165, 0.5);
 $text-align: center;
 $border-radius: atur_border(3px) !global;
-$align-content: center;
-$color: #fff;
-$justify-content: center;
-$flex-direction: column;
-$font-size: 13px;
-$cursor: pointer;
-$line-height: 1.5;
-$margin: auto;
+
 
 .card {
   $paddingcard: 10px 50px;
@@ -99,7 +98,7 @@ $margin: auto;
   width: $widthfooter;
   text-align: $text-align;
   background-color: $background-colorcardtag;
-  margin: $margin;
+  margin: $margin-hal;
   display: $displayfooter;
 }
 
