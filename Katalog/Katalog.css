@@ -30,7 +30,7 @@
   border-radius: 12px;
   flex-direction: column;
   font-size: 13px;
-  width: 10%;
+  width: 30%;
   color: #868061;
   background-color: #fff;
   border-color: #bbb48e;
@@ -45,7 +45,7 @@
   border-radius: 12px;
   flex-direction: column;
   font-size: 13px;
-  width: 10%;
+  width: 30%;
   color: #fff;
   background-color: #868061;
   border-color: #bbb48e;
@@ -62,11 +62,14 @@
   display: flow-root;
 }
 
-h4, h6 {
+h4,
+h6 {
   color: #fff;
 }
 
-h3, h5, p {
+h3,
+h5,
+p {
   color: #868061;
   text-align: center;
 }
