@@ -1,0 +1,93 @@
+$box-shadow: 0 4px 8px 0 rgba(142, 144, 165, 0.5);
+$paddingcard: 10px 50px;
+$text-align: center;
+$border-radius: 12px;
+$background-colorcard: #bbb48e;
+$paddingcardboxtag: 20px;
+$widthcardtag: 15%;
+$align-content: center;
+$color: #fff;
+$displaycardtag: grid;
+$background-colorcardtag: #868061;
+
+$displaybtn: inline;
+$justify-content: center;
+$flex-direction: column;
+$font-size: 13px;
+$widthbtn: 30%;
+$cursor: pointer;
+$line-height: 1.5;
+$margin: auto;
+$displayfooter: flow-root;
+$widthfooter: 100%;
+$widthbtn: 10%;
+
+.card {
+    box-shadow: $box-shadow;
+    padding: $paddingcard;
+    text-align: $text-align;
+    border-radius: $border-radius;
+    background-color: $background-colorcard;
+  }
+.cardbox {
+    padding: $paddingcardboxtag;
+    text-align: $text-align ;
+    border-radius: $border-radius;
+  }
+  .cardtag {
+    padding: $paddingcardboxtag;
+    width: $widthcardtag;
+    border-radius: $border-radius;
+    background-color: $background-colorcardtag;
+    text-align: $text-align;
+    align-content: $align-content;
+    color: $color;
+    display: $displaycardtag;
+  }
+  .btn {
+    display: $displaybtn;
+    text-align: $text-align;
+    justify-content: $justify-content;
+    border-radius: $border-radius;
+    flex-direction: $flex-direction;
+    font-size: $font-size;
+    width: $widthbtn;
+    color: $background-colorcardtag;
+    background-color: $color;
+    border-color: $background-colorcard;
+    cursor: $cursor;
+    line-height: $line-height;
+  }
+
+  .btnsubmit {
+    display: $displaycardtag;
+    text-align: $text-align;
+    justify-content: $justify-content;
+    border-radius: $border-radius;
+    flex-direction: $flex-direction;
+    font-size: $font-size;
+    width: $widthbtn;
+    color: $color;
+    background-color: $background-colorcardtag;
+    border-color: $background-colorcard;
+    cursor: $cursor;
+    line-height: $line-height;
+  }
+
+  .footer {
+    padding: $paddingcardboxtag;
+    width: $widthfooter;
+    text-align: $text-align;
+    background-color: $background-colorcardtag;
+    margin: $margin;
+    display: $displayfooter;
+  }
+
+  h4,h6 {
+    color: $color;
+  }
+
+  h3,h5,p {
+    color: $background-colorcardtag;
+    text-align: $text-align;
+  }
