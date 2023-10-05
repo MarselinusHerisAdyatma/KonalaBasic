@@ -1,12 +1,12 @@
-$first_border: 2px;
-$second_border: 2px;
+$first_border: 2;
+$second_border: 2;
 @function atur_border($n) {
-  @return $n * $first_border + ($n - $first_border) * $second_border;
+  @return $n * $first_border * $second_border ;
 }
 
 $box-shadow: 0 4px 8px 0 rgba(142, 144, 165, 0.5);
 $text-align: center;
-$border-radius: atur_border(4);
+$border-radius: atur_border(3px) !global;
 $align-content: center;
 $color: #fff;
 $justify-content: center;
@@ -22,14 +22,14 @@ $margin: auto;
   box-shadow: $box-shadow;
   padding: $paddingcard;
   text-align: $text-align;
-  border-radius: $border-radius;
+  border-radius: atur_border(3px);
   background-color: $background-colorcard;
 }
 .cardbox {
   $paddingcardboxtag: 20px !global;
   padding: $paddingcardboxtag;
   text-align: $text-align;
-  border-radius: $border-radius;
+  border-radius: atur_border(3px);
 }
 .cardtag {
   $first_widthcardtag: 3%;
@@ -43,7 +43,7 @@ $margin: auto;
   $background-colorcardtag: #868061 !global;
   padding: $paddingcardboxtag;
   width: $widthcardtag;
-  border-radius: $border-radius;
+  border-radius: atur_border(3px);
   background-color: $background-colorcardtag;
   text-align: $text-align;
   align-content: $align-content;
@@ -51,17 +51,17 @@ $margin: auto;
   display: $displaycardtag;
 }
 .btn {
-  $first_widthbtn: 5%;
-  $second_widthbtn: 4%;
+  $first_widthbtn: 5;
+  $second_widthbtn: 4;
   @function atur_widthbtn($b) {
-    @return $b * $first_widthbtn * ($second_widthbtn-2);
+    @return $b * $first_widthbtn * ($second_widthbtn - 2);
   }
   $displaybtn: inline;
-  $widthbtn: atur_widthbtn(3) !global;
+  $widthbtn: atur_widthbtn(3%) !global;
   display: $displaybtn;
   text-align: $text-align;
   justify-content: $justify-content;
-  border-radius: $border-radius;
+  border-radius: atur_border(3px);
   flex-direction: $flex-direction;
   font-size: $font-size;
   width: $widthbtn;
@@ -76,7 +76,7 @@ $margin: auto;
   display: $displaycardtag;
   text-align: $text-align;
   justify-content: $justify-content;
-  border-radius: $border-radius;
+  border-radius: atur_border(3px);
   flex-direction: $flex-direction;
   font-size: $font-size;
   width: $widthbtn;
