@@ -70,8 +70,20 @@ h6 {
 h3,
 h5,
 p {
-  color: #868061;
   text-align: center;
+  color: #868061;
+}
+
+.form-1 {
+  width: 50%;
+}
+
+.form-2 {
+  width: 50%;
+}
+
+.form-3 {
+  width: 50%;
 }
 
 /*# sourceMappingURL=katalog.css.map */

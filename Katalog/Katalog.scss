@@ -9,7 +9,6 @@ $second_border: 2;
   @return $n * $first_border * $second_border ;
 }
 
-
 $box-shadow: 0 4px 8px 0 rgba(142, 144, 165, 0.5);
 $text-align: center;
 $border-radius: atur_border(3px) !global;
@@ -49,6 +48,7 @@ $border-radius: atur_border(3px) !global;
   color: $color;
   display: $displaycardtag;
 }
+
 .btn {
   $first_widthbtn: 5;
   $second_widthbtn: 4;
@@ -93,7 +93,7 @@ $border-radius: atur_border(3px) !global;
     @return $f * $first_widthfooter + $f * $second_widthfooter;
   }
   $displayfooter: flow-root;
-  $widthfooter: atur_widthfooter(5);
+  $widthfooter: atur_widthfooter(5) !global;
   padding: $paddingcardboxtag;
   width: $widthfooter;
   text-align: $text-align;
@@ -104,12 +104,34 @@ $border-radius: atur_border(3px) !global;
 
 h4,
 h6 {
-  color: $color;
+  @if $color == #868061{
+    color: $background-colorcardtag;
+  } @else if $color == #fff{
+    color: $color;
+  } @else{
+    color: $background-colorcard;
+  }
 }
 
 h3,
 h5,
 p {
-  color: $background-colorcardtag;
   text-align: $text-align;
+  
+  @if $background-colorcardtag == #868061{
+  color: $background-colorcardtag;
+  } @else if $background-colorcardtag == #bbb48e {
+    color: $background-colorcard;
+  } @else {
+    color: $color;
+  }
+}
+
+$form:3;
+$base_width: 50%;
+
+@for $i from 1 through $form{
+  .form-#{$i}{
+    width: $base_width;
+  }
 }
