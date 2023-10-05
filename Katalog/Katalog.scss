@@ -1,6 +1,12 @@
+$first_border: 2px;
+$second_border: 2px;
+@function atur_border($n) {
+  @return $n * $first_border + ($n - $first_border) * $second_border;
+}
+
 $box-shadow: 0 4px 8px 0 rgba(142, 144, 165, 0.5);
 $text-align: center;
-$border-radius: 12px;
+$border-radius: atur_border(4);
 $align-content: center;
 $color: #fff;
 $justify-content: center;
@@ -20,13 +26,19 @@ $margin: auto;
   background-color: $background-colorcard;
 }
 .cardbox {
-$paddingcardboxtag: 20px !global;
+  $paddingcardboxtag: 20px !global;
   padding: $paddingcardboxtag;
   text-align: $text-align;
   border-radius: $border-radius;
 }
 .cardtag {
-  $widthcardtag: 15%;
+  $first_widthcardtag: 3%;
+  $second_widthcardtag: 6%;
+  @function atur_widthcardtag($c) {
+    @return $second_widthcardtag + $c * $first_widthcardtag;
+  }
+
+  $widthcardtag: atur_widthcardtag(3);
   $displaycardtag: grid !global;
   $background-colorcardtag: #868061 !global;
   padding: $paddingcardboxtag;
@@ -39,8 +51,13 @@ $paddingcardboxtag: 20px !global;
   display: $displaycardtag;
 }
 .btn {
+  $first_widthbtn: 5%;
+  $second_widthbtn: 4%;
+  @function atur_widthbtn($b) {
+    @return $b * $first_widthbtn * ($second_widthbtn-2);
+  }
   $displaybtn: inline;
-  $widthbtn: 30% !global;
+  $widthbtn: atur_widthbtn(3) !global;
   display: $displaybtn;
   text-align: $text-align;
   justify-content: $justify-content;
@@ -71,8 +88,13 @@ $paddingcardboxtag: 20px !global;
 }
 
 .footer {
+  $first_widthfooter: 12%;
+  $second_widthfooter: 8%;
+  @function atur_widthfooter($f) {
+    @return $f * $first_widthfooter + $f * $second_widthfooter;
+  }
   $displayfooter: flow-root;
-  $widthfooter: 100%;
+  $widthfooter: atur_widthfooter(5);
   padding: $paddingcardboxtag;
   width: $widthfooter;
   text-align: $text-align;
