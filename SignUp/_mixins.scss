@@ -1,0 +1,6 @@
+@mixin social-icon-hover {
+    &:hover i {
+        color: $hover-color;
+        transition: color 0.3s;
+    }
+}
