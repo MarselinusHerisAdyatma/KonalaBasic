@@ -18,6 +18,12 @@ body{
     width: 100%;
     top: 0;
 }
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 .navbar-nav li{
     margin-right:20px;
 }
@@ -126,12 +132,14 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 .review{
     background-color: $background-color;
-    height: 650px;
+    height: 700px;
     font-family: $default-font, Times, sans-serif;
 }
 .review h3{
-    padding: 40px;
+    padding:15px 0px 10px 0px;
     text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .review-box {
@@ -161,22 +169,41 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 .kritik-saran{
     background-color: $background-page;
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .kritik-saran h3{
-    padding: 40px;
+    padding: 20px;
 }
-.form-floating{
-    margin: 0px 100px 0px 100px;
+.form-container {
+    margin: 0 auto;
+    max-width: 500px;
 }
-.btnsubmit{
-    margin-top: 10px;
-    margin-bottom: 20px;
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-submit{
+    $black-color:#000000;
     font-family: $default-font, Times, serif;
     background-color: $white-color;
-    border-radius:10px ;
+    color: $black-color;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn-submit:hover {
+    background-color: $primary-color;
 }
 .ftr{
-    background-color: #868061;
+    background-color: $primary-color;
     border-radius: 15px 15px 0 0;
     padding-top: 10px;
     padding-bottom: 10px;

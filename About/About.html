@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="About.css">
 </head>
 <body>
-    <nav id="rounded-navbar" class="navbar navbar-expand-sm" style="background-color: #FDFBF0;">
+    <nav id="rounded-navbar" class="navbar navbar-expand-sm fixed-navbar" style="background-color: #FDFBF0;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="logo.jpeg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
@@ -75,9 +75,9 @@
                   <div class="review-box">
                       <div class="d-flex align-items-center">
                           <i class="fas fa-user-circle user-avatar" id="avatar"></i>
-                          <h4 class="ml-3" id="name-custumer">John Doe</h4>
+                          <h4 class="ml-3" id="name-custumer">Rhena</h4>
                       </div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tincidunt justo, non vehicula est luctus at.</p>
+                      <p>"Terima kasih atas hampers indah ini! Isinya begitu beragam dan semuanya tampak begitu elegan. Sangat cocok untuk hadiah spesial seperti pernikahan atau ulang tahun. Saya sangat senang dengan produk ini!"</p>
                       <div class="d-flex align-items-center">
                           <div class="mr-3">
                               <i class="fas fa-star rating"></i>
@@ -98,9 +98,9 @@
                 <div class="review-box">
                     <div class="d-flex align-items-center">
                         <i class="fas fa-user-circle user-avatar" id="avatar"></i>
-                        <h4 class="ml-3" id="name-custumer">John Doe</h4>
+                        <h4 class="ml-3" id="name-custumer">Okta</h4>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tincidunt justo, non vehicula est luctus at.</p>
+                    <p>"Kerudung ini benar-benar cantik. Bahan berkualitas tinggi dan motifnya sangat elegan. Saya telah menerima banyak pujian ketika memakainya. Terima kasih atas produk yang luar biasa!"</p>
                     <div class="d-flex align-items-center">
                         <div class="mr-3">
                             <i class="fas fa-star rating"></i>
@@ -121,9 +121,9 @@
                 <div class="review-box">
                     <div class="d-flex align-items-center">
                         <i class="fas fa-user-circle user-avatar" id="avatar"></i>
-                        <h4 class="ml-3" id="name-custumer">John Doe</h4>
+                        <h4 class="ml-3" id="name-custumer">Dini</h4>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tincidunt justo, non vehicula est luctus at.</p>
+                    <p>"Hampers ini adalah hadiah yang sempurna untuk acara apa pun. Isinya sangat mengesankan, dan pengemasannya juga sangat cantik. Saya suka semua yang ada di dalamnya, terutama cokelat premium. Pasti akan membeli lagi!"</p>
                     <div class="d-flex align-items-center">
                         <div class="mr-3">
                             <i class="fas fa-star rating"></i>
@@ -140,14 +140,15 @@
     </div>
     </section>
     <section class="kritik-saran">
-        <h3> Kritik dan Saran</h3>
+        <h3>Kritik dan Saran</h3>
         <div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Message</label>
-                <button class="btnsubmit" type="submit">Submit</button>
+            <div class="form-container">
+                <textarea class="form-control" placeholder="Tulis kritik atau saran Anda di sini" id="kritikSaran" style="height: 100px"></textarea>
+                <button class="btn-submit" type="button" onclick="submitKritikSaran()">Submit</button>
+                <div id="responseMessage"></div>
             </div>
         </div>
+        
     </section>
     <footer class="ftr">
         <div class="centered-content">

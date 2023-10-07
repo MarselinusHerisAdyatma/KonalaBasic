@@ -11,6 +11,13 @@ body {
   top: 0;
 }
 
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .navbar-nav li {
   margin-right: 20px;
 }
@@ -129,13 +136,15 @@ body {
 
 .review {
   background-color: #FDFBF0;
-  height: 650px;
+  height: 700px;
   font-family: "Times New Roman", Times, sans-serif;
 }
 
 .review h3 {
-  padding: 40px;
+  padding: 15px 0px 10px 0px;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .review-box {
@@ -166,22 +175,41 @@ body {
 .kritik-saran {
   background-color: #BDB89E;
   text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .kritik-saran h3 {
-  padding: 40px;
+  padding: 20px;
 }
 
-.form-floating {
-  margin: 0px 100px 0px 100px;
+.form-container {
+  margin: 0 auto;
+  max-width: 500px;
 }
 
-.btnsubmit {
-  margin-top: 10px;
-  margin-bottom: 20px;
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-submit {
   font-family: "Times New Roman", Times, serif;
   background-color: #FFFFFF;
-  border-radius: 10px;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-submit:hover {
+  background-color: #868061;
 }
 
 .ftr {
