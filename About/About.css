@@ -24,7 +24,7 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  font-size: 10px;
+  font-size: 14px;
   color: #868061;
   padding: 3px 5px;
   background-color: #FDFBF0;
@@ -40,6 +40,17 @@ body {
 .nav-item a:hover {
   background-color: #868061;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+  /* Gaya untuk tombol login */
+  #loginButton {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s; /* Efek transisi warna saat dihover */
+  }
+  
+  #loginButton:hover {
+    color: #ff9900; /* Warna teks tombol login saat dihover */
 }
 
 .about {
