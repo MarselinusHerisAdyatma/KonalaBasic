@@ -1,6 +1,5 @@
 body {
   background-color: #BDB89E;
-  font-size: 16px;
 }
 
 #rounded-navbar {
@@ -116,7 +115,7 @@ body {
 .text-box p {
   text-align: center;
   font-size: 30px;
-  font-family: serif, sans-serif;
+  font-family: "Times New Roman", Times, sans-serif;
   padding: 25px 0px 10px 15px;
 }
 
@@ -136,22 +135,6 @@ body {
 
 .review h3 {
   padding: 40px;
-}
-
-.review-box {
-  display: flex;
-  height: 120px;
-  margin: 0px 40px 30px 40px;
-  border-radius: 5px;
-  background-color: #BDB89E;
-}
-
-.inner-box {
-  flex: 1;
-  height: 90px;
-  margin: 15px 100px 0px 15px;
-  background-color: #868061;
-  opacity: 0.5;
 }
 
 .kritik-saran {

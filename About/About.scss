@@ -1,13 +1,13 @@
 $background-page: #BDB89E;
 $primary-color: #868061;
 $secondary-color: #BBB48E;
-$tertiary-color: #DBD6BC;
 $background-color: #FDFBF0;
 $white-color: #FFFFFF;
+$default-font:'Times New Roman';
+
 
 body{
     background-color: $background-page;
-    font-size: 16px; 
 }
 
 #rounded-navbar{
@@ -24,7 +24,7 @@ body{
 .nav-item a{
 text-decoration: none;
 font-size: 10px;
-color: #868061;
+color: $primary-color;
 padding: 3px 5px; 
 background-color: $background-color; 
 border: solid 1px $primary-color;
@@ -54,6 +54,7 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     display: inline-block;
 }
 .round-konala{
+    $tertiary-color: #DBD6BC;
     margin-top: 20px;
     border-radius: 15px;
     background-color: $tertiary-color;
@@ -113,7 +114,7 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 .text-box p{
     text-align: center;
     font-size: 30px;
-    font-family: serif,sans-serif;
+    font-family: $default-font, Times, sans-serif;
     padding: 25px 0px 10px 15px;
 }
 .under-text{
@@ -131,20 +132,7 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 .review h3{
     padding: 40px;
 }
-.review-box{
-    display: flex;
-    height: 120px;
-    margin: 0px 40px 30px 40px;
-    border-radius: 5px;
-    background-color: $background-page;
-}
-.inner-box{
-    flex: 1;
-    height: 90px;
-    margin: 15px 100px 0px 15px;
-    background-color: $primary-color;
-    opacity: 0.5;
-}
+
 .kritik-saran{
     background-color: $background-page;
     text-align: center;
@@ -158,7 +146,7 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 .btnsubmit{
     margin-top: 10px;
     margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $default-font, Times, serif;
     background-color: $white-color;
     border-radius:10px ;
 }
