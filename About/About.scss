@@ -126,11 +126,36 @@ box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 .review{
     background-color: $background-color;
-    height: 600px;
-    text-align: center;
+    height: 650px;
+    font-family: $default-font, Times, sans-serif;
 }
 .review h3{
     padding: 40px;
+    text-align: center;
+}
+
+.review-box {
+    background-color: $background-page;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid $white-color;
+    border-radius: 10px;
+    margin: 0px 0px 25px 0px;
+}
+
+#avatar{
+    margin-bottom: 10px;
+}
+#name-customer{
+    padding-top: 10px;
+}
+.review-box .user-avatar {
+    font-size: 36px;
+    color: $background-color;
+}
+
+.review-box .rating {
+    $star-color: #E2DC3A;
+    color: $star-color;
 }
 
 .kritik-saran{
