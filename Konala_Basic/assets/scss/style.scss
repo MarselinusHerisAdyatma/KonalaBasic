@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $primary-color: rgba(207, 127, 127, 0.753);
 $secondary-color: #bbb48ecc;
 $hover-color: #868061;
@@ -62,3 +63,7 @@ $error-border-color: red;
         @include social-icon-hover; 
     }
 }
+=======
+@use "";
+@import "";
+>>>>>>> 497e3d1547ac56d73f03490286225102962d0931
