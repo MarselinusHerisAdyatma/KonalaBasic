@@ -1,7 +1,3 @@
-<<<<<<< HEAD:Konala_Basic/assets/js/main.js
-=======
-
->>>>>>> 685df3b7b2d3b37b60479365f2a3c00576b34040:assets/js/main.js
 (function() {
   "use strict";
 
