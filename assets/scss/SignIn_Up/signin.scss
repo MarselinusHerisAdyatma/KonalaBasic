@@ -1,20 +1,19 @@
-<<<<<<< HEAD
 $primary-color: rgba(207, 127, 127, 0.753);
 $secondary-color: #bbb48ecc;
 $hover-color: #868061;
 $error-border-color: red;
 
-
+// Fungsi untuk mengganti warna dengan alpha
 @function change-alpha($color, $new-alpha) {
     @return rgba(red($color), green($color), blue($color), $new-alpha);
 }
 
-
+// Fungsi untuk mengganti border color error
 @function change-error-border-color($new-color) {
     @return $new-color;
 }
 
-
+// Mixin untuk efek hover pada social icon
 @mixin social-icon-hover {
     &:hover {
         color: $hover-color;
@@ -42,7 +41,7 @@ $error-border-color: red;
     text-align: center;
     padding: 3px;
     border-radius: 5px;
-    border: 2px solid change-error-border-color($error-border-color); 
+    border: 2px solid change-error-border-color($error-border-color); // Menggunakan fungsi
 }
 
 .social-icon {
@@ -50,20 +49,16 @@ $error-border-color: red;
     margin-right: 5px;
 
     &.facebook {
-        @include social-icon-hover; 
+        @include social-icon-hover; // Menggunakan mixin
     }
 
     &.google {
         margin-left: 5px;
-        @include social-icon-hover; 
+        @include social-icon-hover; // Menggunakan mixin
     }
 
     &.twitter {
         margin-left: 5px;
-        @include social-icon-hover; 
+        @include social-icon-hover; // Menggunakan mixin
     }
 }
-=======
-@use "";
-@import "";
->>>>>>> 497e3d1547ac56d73f03490286225102962d0931
