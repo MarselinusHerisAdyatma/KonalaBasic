@@ -81,10 +81,10 @@
 .testimonials .testimonial-item p {
   $font-style: italic;
   $margin: 15px 0 0 0;
-  $padding: 0;
+  $paddingglobal: 0 !global;
   font-style: $font-style;
   margin: $margin;
-  padding: $padding !global;
+  padding: $paddingglobal;
 }
 
 /*--------------------------------------------------------------
@@ -96,7 +96,7 @@
   }
   
   .portfolio #portfolio-flters {
-    padding: $padding;
+    padding: $paddingglobal;
     $margin: 0 0 35px 0;
     $list-style: none;
     $text-align: center;
