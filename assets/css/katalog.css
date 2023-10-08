@@ -89,7 +89,7 @@
   
   .portfolio #portfolio-flters li:hover,
   .portfolio #portfolio-flters li.filter-active {
-    color: #eb5d1e;
+    color: #868061;
   }
   
   .portfolio #portfolio-flters li:last-child {
@@ -134,7 +134,7 @@
   }
   
   .portfolio .portfolio-wrap .portfolio-links a {
-    color: #eb5d1e;
+    color: #868061;
     margin: 0 4px;
     line-height: 0;
     background-color: #fff;
@@ -154,7 +154,7 @@
   }
   
   .portfolio .portfolio-wrap .portfolio-links a:hover {
-    background: #eb5d1e;
+    background: #868061;
     color: #fff;
   }
   
@@ -216,11 +216,11 @@
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #eb5d1e;
+    border: 1px solid #868061;
   }
   
   .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #eb5d1e;
+    background-color: #868061;
   }
   
   .portfolio-details .portfolio-info {
