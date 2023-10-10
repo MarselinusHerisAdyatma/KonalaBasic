@@ -702,6 +702,12 @@ section {
   color: #5a6570;
 }
 
+.about img{
+  width: 55%;
+  margin: 30px 0px 0px 150px;
+  border-radius: 500px;
+}
+
 @media (max-width: 991px) {
   .about .about-img img {
     max-width: 70%;
