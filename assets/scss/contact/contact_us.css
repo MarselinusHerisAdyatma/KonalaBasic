@@ -15,7 +15,7 @@
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 .contact .info i {
-  font-size: 44px;
+  font-size: 20px;
   color: #868061;
   float: left;
   width: 44px;
@@ -64,19 +64,7 @@
   background: #868061;
   color: #fff;
 }
-.contact .info .email:hover i {
-  background: #868061;
-  color: #fff;
-}
-.contact .info .address:hover i {
-  background: #868061;
-  color: #fff;
-}
-.contact .info .name:hover i {
-  background: #868061;
-  color: #fff;
-}
-.contact .info .phone:hover i {
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .name:hover i, .contact .info .phone:hover i {
   background: #868061;
   color: #fff;
 }
@@ -291,4 +279,4 @@
   }
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=contact_us.css.map */
